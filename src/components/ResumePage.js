@@ -11,7 +11,7 @@ const ResumePage = () => {
         <div className="absolute top-4 right-4 z-50">
           <ThemeToggle />
         </div>
-        <div className="w-full h-full flex justify-center items-center overflow-hidden">
+        <div className="w-full h-full flex justify-center items-center overflow-hidden mt-5">
           <iframe
             src="/resume.pdf"
             title="Resume"

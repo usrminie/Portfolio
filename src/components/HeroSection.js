@@ -4,13 +4,22 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-90 text-gray-900 dark:text-white h-screen flex items-center justify-center p-4 select-none">
-      <div className="absolute top-4 right-4">
+    <section className="relative bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white h-screen flex items-center justify-center p-4 select-none overflow-hidden">
+      <div className="absolute top-4 right-4 z-30">
         <ThemeToggle />
       </div>
-      <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto">
+
+      {/* Background abstract shapes */}
+      <div className="absolute inset-0 overflow-hidden z-10">
+        <div className="absolute -top-10 -left-20 w-80 h-80 bg-gradient-to-r from-blue-500 to-purple-600 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+        <div className="absolute top-20 right-0 w-72 h-72 bg-gradient-to-r from-pink-500 to-yellow-500 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-2000"></div>
+        <div className="absolute bottom-20 left-10 w-72 h-72 bg-gradient-to-r from-green-400 to-blue-600 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-4000"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-6000"></div>
+      </div>
+
+      <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto z-20">
         <div className="text-center md:text-left md:flex-1">
-          <h1 className="text-5xl md:text-6xl font-bold mb-2 flex items-center justify-center md:justify-start  bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+          <h1 className="text-5xl md:text-6xl font-bold mb-2 flex items-center justify-center md:justify-start bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
             Hello,<span className="wave ml-3 animate-wave">👋</span>
           </h1>
           <h2 className="text-4xl md:text-5xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
