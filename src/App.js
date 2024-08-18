@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
@@ -14,11 +13,10 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <div className="font-poppins">
+      <div className="font-serif">
         <Routes>
           <Route path="/" element={
             <>
-              <Navbar />
               <HeroSection />
               <AboutSection />
               <EducationSection />
