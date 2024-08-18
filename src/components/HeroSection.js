@@ -1,23 +1,88 @@
-import React from 'react';
-import ThemeToggle from './ThemeToggle';
+import React, { useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import ThemeToggle from './ThemeToggle';
+import logo from '../assets/logo.png';
 
 const HeroSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <section className="relative bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white h-screen flex items-center justify-center p-4 select-none overflow-hidden">
-      <div className="absolute top-4 right-4 z-30">
-        <ThemeToggle />
+    <section className="relative bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white h-screen flex flex-col items-center justify-center p-4 select-none">
+      {/* Logo and Name on the top left */}
+      <div className="absolute top-4 left-4 flex items-center space-x-4">
+        <img src={logo} alt="Logo" className="h-12 w-12 rounded-full shadow-md border-2 border-white ml-4" />
       </div>
 
-      {/* Background abstract shapes */}
-      <div className="absolute inset-0 overflow-hidden z-10">
-        <div className="absolute -top-10 -left-20 w-80 h-80 bg-gradient-to-r from-blue-500 to-purple-600 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-        <div className="absolute top-20 right-0 w-72 h-72 bg-gradient-to-r from-pink-500 to-yellow-500 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-2000"></div>
-        <div className="absolute bottom-20 left-10 w-72 h-72 bg-gradient-to-r from-green-400 to-blue-600 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-4000"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-6000"></div>
+      {/* Menu items centered at the top */}
+      <div className="absolute top-4 inset-x-0 flex justify-center items-center">
+        <div className="hidden md:flex md:items-center space-x-4 bg-white bg-opacity-20 dark:bg-gray-700 dark:bg-opacity-50 rounded-full px-6 py-2">
+          <a href="#education" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-opacity-70 hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+            Education
+          </a>
+          <a href="#skills" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-opacity-70 hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+            Skills
+          </a>
+          <a href="#projects" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-opacity-70 hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+            Projects
+          </a>
+          <a href="#contact" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-opacity-70 hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+            Contact
+          </a>
+          <a href="/resume" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-opacity-70 hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+            Resume
+          </a>
+          {/* Theme Toggle */}
+          <ThemeToggle />
+        </div>
+
+        {/* Hamburger menu for mobile */}
+        <div className=" absolute top-1 right-6 md:hidden ">
+          <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+            <GiHamburgerMenu className="w-8 h-8 text-gray-900 dark:text-white" />
+          </button>
+        </div>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto z-20">
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 rounded-lg shadow-lg mt-2 absolute inset-x-4 top-16 z-20">
+          <ul className="flex flex-col items-center space-y-2 py-4">
+            <li>
+              <a href="#education" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#skills" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="/resume" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
+                Resume
+              </a>
+            </li>
+            <li>
+              {/* Theme Toggle */}
+              <ThemeToggle />
+            </li>
+          </ul>
+        </div>
+      )}
+
+      {/* Hero Content */}
+      <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto mt-28 mb-8">
         <div className="text-center md:text-left md:flex-1">
           <h1 className="text-5xl md:text-6xl font-bold mb-2 flex items-center justify-center md:justify-start bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
             Hello,<span className="wave ml-3 animate-wave">👋</span>
@@ -46,10 +111,10 @@ const HeroSection = () => {
           </div>
           <div className="flex justify-center md:justify-start">
             <a
-              href="/resume"
-              className="inline-block px-8 py-4 text-lg font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white dark:bg-gray-800 dark:text-white rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all"
+              href="#about"
+              className="inline-block px-6 py-2 text-lg font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white dark:bg-gray-800 dark:text-white rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all"
             >
-              Resume
+              About Me
             </a>
           </div>
         </div>
