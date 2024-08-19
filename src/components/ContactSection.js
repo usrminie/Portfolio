@@ -30,7 +30,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 mt-12">
         <h2 className="text-4xl font-extrabold mb-6 text-gray-900 dark:text-gray-100 text-center">
           Contact
-          <span className="block w-20 h-1.5 rounded-full mt-2 mx-auto bg-gradient-to-r from-blue-600 to-purple-600 dark:bg-gradient-to-r from-blue-600 to-purple-600"></span>
+          <span className="block w-20 h-1.5 rounded-full mt-2 mx-auto bg-gradient-to-r from-blue-800 to-purple-800 dark:bg-gradient-to-r from-blue-800 to-purple-800"></span>
         </h2>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
           <input type="hidden" name="service_id" value="YOUR_SERVICE_ID" />
@@ -49,7 +49,7 @@ const ContactSection = () => {
             <label htmlFor="message" className="block text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">Message</label>
             <textarea id="message" name="message" rows="4" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"></textarea>
           </div>
-          <button type="submit" className="w-full py-2 px-4 bg-gradient-to-r from-blue-950 to-purple-950 text-white font-semibold rounded-lg shadow-lg hover:from-blue-800 hover:to-purple-800 transition-all">
+          <button type="submit" className="w-full py-2 px-4 bg-gradient-to-r from-blue-800 to-purple-800 text-white font-semibold rounded-lg shadow-lg hover:from-blue-800 hover:to-purple-800 transition-all">
             Send Message
           </button>
         </form>
