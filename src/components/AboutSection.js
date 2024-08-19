@@ -2,10 +2,11 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-900 dark:to-gray-800">
+    <section id="about" className="py-16 bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="text-4xl md:text-4xl font-extrabold mb-8 text-gray-900 dark:text-gray-100 text-center">
+        <h2 className="text-4xl md:text-4xl font-extrabold mb-8 text-gray-900 dark:text-gray-100 text-center relative">
           About Me
+          <span className="block w-20 h-1.5 rounded-full mt-2 mx-auto bg-gradient-to-r from-blue-600 to-purple-600 dark:bg-gradient-to-r from-blue-600 to-purple-600"></span>
         </h2>
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-lg md:text-1xl text-gray-700 dark:text-gray-300 leading-relaxed text-center space-y-4">

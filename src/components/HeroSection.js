@@ -16,7 +16,7 @@ const HeroSection = () => {
 
       {/* Menu items centered at the top */}
       <div className="absolute top-4 inset-x-0 flex justify-center items-center">
-        <div className="hidden md:flex md:items-center space-x-4 bg-white bg-opacity-20 dark:bg-gray-700 dark:bg-opacity-50 rounded-full px-6 py-2">
+        <div className="hidden md:flex md:items-center space-x-4 bg-white bg-opacity-60 dark:bg-gray-700 dark:bg-opacity-50 rounded-full px-6 py-2">
           <a href="#education" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-opacity-70 hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
             Education
           </a>
@@ -82,7 +82,7 @@ const HeroSection = () => {
       )}
 
       {/* Hero Content */}
-      <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto mt-28 mb-8">
+      <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto mt-36 mb-12">
         <div className="text-center md:text-left md:flex-1">
           <h1 className="text-5xl md:text-6xl font-bold mb-2 flex items-center justify-center md:justify-start bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
             Hello,<span className="wave ml-3 animate-wave">👋</span>

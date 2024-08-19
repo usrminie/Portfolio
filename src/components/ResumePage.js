@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import ThemeToggle from './ThemeToggle';
 import logo from '../assets/logo.png';
-import Footer from './Footer';
+
 
 const ResumePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +10,11 @@ const ResumePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white flex flex-col justify-between">
       <div className="absolute top-4 left-4 flex items-center space-x-4">
-        <img src={logo} alt="Logo" className="h-10 w-10 rounded-full shadow-md border-2 border-white ml-4" />
-        <div className="text-xl font-extrabold">Shalini Singh</div>
+        <img src={logo} alt="Logo" className="h-12 w-12 rounded-full shadow-md border-2 border-white ml-4" />
       </div>
       {/* Menu items centered at the top */}
       <div className="absolute top-4 inset-x-0 flex justify-center items-center">
-        <div className="hidden md:flex md:items-center space-x-4 bg-white bg-opacity-20 dark:bg-gray-700 dark:bg-opacity-50 rounded-full px-6 py-2">
+        <div className="hidden md:flex md:items-center space-x-4 bg-white bg-opacity-60 dark:bg-gray-700 dark:bg-opacity-50 rounded-full px-6 py-2">
           <a href="/" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-opacity-70 hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
             Home
           </a>
@@ -98,7 +97,11 @@ const ResumePage = () => {
           </a>
         </div>
       </div>
-      <Footer />
+      <div className="bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white p-2 md:flex md:items-center space-x-4 mt-2">
+        <div className="container mx-auto text-center rounded-full bg-white bg-opacity-60 dark:bg-gray-700 dark:bg-opacity-50 py-4 ">
+          <p>&copy; 2024 Shalini Singh. All rights reserved.</p>
+        </div>
+      </div>
     </div>
   );
 };

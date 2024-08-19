@@ -6,7 +6,7 @@ import ProjectSection from './components/ProjectSection';
 import EducationSection from './components/EducationSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
+
 import ResumePage from './components/ResumePage';
 import './index.css';
 
@@ -23,7 +23,7 @@ function App() {
               <SkillsSection />
               <ProjectSection />
               <ContactSection />
-              <Footer />
+              
             </>
           } />
           <Route path="/resume" element={<ResumePage />} />
