@@ -3,17 +3,19 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import ThemeToggle from './ThemeToggle';
 import logo from '../assets/logo.png';
+import backgroundImage from '../assets/pattern.png';
+
 
 const HeroSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="relative bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white h-screen flex flex-col items-center justify-center p-4 select-none">
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400 to-transparent dark:via-blue-800 opacity-50"></div>
       {/* Logo and Name on the top left */}
       <div className="absolute top-4 left-4 flex items-center space-x-4">
         <img src={logo} alt="Logo" className="h-12 w-12 rounded-full shadow-md border-2 border-white ml-4" />
       </div>
-
       {/* Menu items centered at the top */}
       <div className="absolute top-4 inset-x-0 flex justify-center items-center">
         <div className="hidden md:flex md:items-center space-x-4 bg-white bg-opacity-60 dark:bg-gray-700 dark:bg-opacity-50 rounded-full px-6 py-2">
@@ -35,7 +37,6 @@ const HeroSection = () => {
           {/* Theme Toggle */}
           <ThemeToggle />
         </div>
-
         {/* Hamburger menu for mobile */}
         <div className=" absolute top-1 right-6 md:hidden ">
           <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
@@ -43,7 +44,6 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 rounded-lg shadow-lg mt-2 absolute inset-x-4 top-16 z-20">
@@ -80,10 +80,9 @@ const HeroSection = () => {
           </ul>
         </div>
       )}
-
       {/* Hero Content */}
       <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto mt-36 mb-12">
-        <div className="text-center md:text-left md:flex-1">
+        <div className="relative text-center md:text-left md:flex-1">
           <h1 className="text-5xl md:text-6xl font-bold mb-2 flex items-center justify-center md:justify-start bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
             Hello,<span className="wave ml-3 animate-wave">👋</span>
           </h1>
@@ -119,8 +118,12 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex-shrink-0 mb-6 md:mb-0 md:ml-12 relative">
-          <div className="absolute inset-0 z-10"></div>
-          <div className="relative rounded-full p-2 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-100 dark:from-gray-800 dark:via-gray-800 dark:to-gray-700">
+          <div className="relative z-10 rounded-full p-2 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-100 dark:from-gray-800 dark:via-gray-800 dark:to-gray-700">
+            <img
+              src={backgroundImage}
+              alt="Background"
+              className="absolute inset-0 w-full h-full object-cover opacity-70 rounded-full z-0"
+            />
             <img
               src="/profile.png"
               alt="Shalini Singh"

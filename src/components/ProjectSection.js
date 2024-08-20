@@ -17,13 +17,14 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-16 bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900">
+    <section id="projects" className="relative py-16 bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900">
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400 to-transparent dark:via-blue-800 opacity-50"></div>
       <div className="container mx-auto px-4 mt-12">
-        <h2 className="text-4xl font-extrabold mb-6 text-gray-900 dark:text-gray-100 text-center">
+        <h2 className="text-4xl font-extrabold mb-8 text-gray-900 dark:text-gray-100 text-center relative z-10">
           Projects
           <span className="block w-20 h-1.5 rounded-full mt-2 mx-auto bg-gradient-to-r from-blue-800 to-purple-800 dark:bg-gradient-to-r from-blue-800 to-purple-800"></span>
         </h2>
-        <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 pt-6">
+        <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 pt-6 relative z-10">
           {projects.map((project, index) => (
             <div key={index} className="bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
               <img src={project.imgSrc} alt={project.title} className="w-full md:w-1/2 h-full object-cover px-8 py-8" />
