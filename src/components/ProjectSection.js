@@ -40,8 +40,7 @@ const ProjectsSection = () => {
                     {project.technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="bg-gray-600 text-white text-sm font-semibold mr-2 mb-2 px-3 py-1 rounded-full"
-                      >
+                        className="bg-gray-600 text-white text-sm font-semibold mr-2 mb-2 px-3 py-1 rounded-full">
                         {tech}
                       </span>
                     ))}
@@ -51,8 +50,7 @@ const ProjectsSection = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-2 px-4 text-lg font-medium text-white bg-gradient-to-r from-blue-800 to-purple-800 rounded-full hover:from-blue-700 hover:to-purple-700 transition duration-300 ease-in-out "
-                >
+                  className="py-2 px-4 text-lg font-medium text-white bg-gradient-to-r from-blue-800 to-purple-800 rounded-full hover:from-blue-700 hover:to-purple-700 transition duration-300 ease-in-out ">
                   View Project
                 </a>
               </div>

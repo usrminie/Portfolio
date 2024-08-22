@@ -15,8 +15,7 @@ const AboutSection = () => {
             <img
               src={aboutImage}
               alt="About Me"
-              className="w-full h-auto mt-12"
-            />
+              className="w-full h-auto mt-12"/>
           </div>
           <div className="md:w-1/2 text-lg md:text-lg text-gray-9500 dark:text-gray-300 leading-relaxed text-center mt-12 font-medium">
             <p className="space-y-4">

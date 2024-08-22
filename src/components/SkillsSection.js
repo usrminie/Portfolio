@@ -39,8 +39,8 @@ const SkillsSection = () => {
           Skills & Expertise
           <span className="block w-36 h-1.5 rounded-full mt-4 mx-auto bg-gradient-to-r from-blue-800 to-purple-800 dark:bg-gradient-to-r from-blue-800 to-purple-800"></span>
         </h2>
-        
         <div className="space-y-12 p-5">
+          
           {/* Programming Languages */}
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100 text-center">
@@ -50,8 +50,7 @@ const SkillsSection = () => {
               {skillsData.programmingLanguages.map((skill, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group"
-                >
+                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group">
                   <img src={skill.src} alt={skill.alt} className="w-12 h-12 mb-2 filter drop-shadow-sm" />
                   <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{skill.name}</p>
                 </div>
@@ -68,8 +67,7 @@ const SkillsSection = () => {
               {skillsData.webDevelopment.map((skill, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group"
-                >
+                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group">
                   <img src={skill.src} alt={skill.alt} className="w-12 h-12 mb-2 filter drop-shadow-sm" />
                   <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{skill.name}</p>
                 </div>
@@ -86,8 +84,7 @@ const SkillsSection = () => {
               {skillsData.meanStack.map((skill, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group"
-                >
+                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group">
                   <img src={skill.src} alt={skill.alt} className="w-12 h-12 mb-2 filter drop-shadow-sm " />
                   <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{skill.name}</p>
                 </div>
@@ -104,8 +101,7 @@ const SkillsSection = () => {
               {skillsData.othertools.map((skill, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group"
-                >
+                  className="relative flex flex-col items-center text-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-transform transform hover:scale-105 hover:shadow-md p-3 group">
                   <img src={skill.src} alt={skill.alt} className="w-12 h-12 mb-2 filter drop-shadow-sm " />
                   <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{skill.name}</p>
                 </div>

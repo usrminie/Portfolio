@@ -95,24 +95,21 @@ const HeroSection = () => {
               href="https://www.linkedin.com/in/shalini-singh1117/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-900 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform transform hover:scale-110"
-            >
+              className="text-gray-900 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform transform hover:scale-110">
               <FaLinkedin className="w-10 h-10" />
             </a>
             <a
               href="https://github.com/usrminie"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-900 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-500 transition-transform transform hover:scale-110"
-            >
+              className="text-gray-900 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-500 transition-transform transform hover:scale-110">
               <FaGithub className="w-10 h-10" />
             </a>
           </div>
           <div className="flex justify-center md:justify-start">
             <a
               href="#about"
-              className="inline-block px-6 py-2 text-lg font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white dark:bg-gray-800 dark:text-white rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all"
-            >
+              className="inline-block px-6 py-2 text-lg font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white dark:bg-gray-800 dark:text-white rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all">
               About Me
             </a>
           </div>
@@ -122,14 +119,12 @@ const HeroSection = () => {
             <img
               src={backgroundImage}
               alt="Background"
-              className="absolute inset-0 w-full h-full object-cover opacity-70 rounded-full z-0 "
-            />
+              className="absolute inset-0 w-full h-full object-cover opacity-70 rounded-full z-0 "/>
             <img
               src="/profile.png"
               alt="Shalini Singh"
               className="w-96 h-96 md:w-[30rem] md:h-[30rem] lg:w-[32rem] lg:h-[32rem] rounded-full border-4 border-gray-900 dark:border-black-800 shadow-lg hover:shadow-2xl transition-shadow transform hover:scale-110 pointer-events-none"
-              onContextMenu={(e) => e.preventDefault()}
-            />
+              onContextMenu={(e) => e.preventDefault()}/>
           </div>
         </div>
       </div>
