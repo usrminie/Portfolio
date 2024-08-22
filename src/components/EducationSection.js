@@ -9,7 +9,7 @@ const EducationSection = () => {
           Education
           <span className="block w-24 h-1.5 rounded-full mt-2 mx-auto bg-gradient-to-r from-blue-800 to-purple-800 dark:bg-gradient-to-r from-blue-800 to-purple-800"></span>
         </h2>
-        <div className="flex flex-col space-y-8 p-5">
+        <div className="flex flex-col space-y-8 p-8">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
             <h3 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Master's Degree in Computer Applications (M.C.A)</h3>
             <p className="text-lg text-gray-700 dark:text-gray-300 font-bold">Kamla Nehru Institute of Technology, Sultanpur</p>
