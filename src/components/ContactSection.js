@@ -34,9 +34,9 @@ const ContactSection = () => {
           <span className="block w-20 h-1.5 rounded-full mt-2 mx-auto bg-gradient-to-r from-blue-800 to-purple-800 dark:bg-gradient-to-r from-blue-800 to-purple-800"></span>
         </h2>
         <form onSubmit={handleSubmit} className="relative max-w-lg mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
-          <input type="hidden" name="service_id" value="YOUR_SERVICE_ID" />
-          <input type="hidden" name="template_id" value="YOUR_TEMPLATE_ID" />
-          <input type="hidden" name="user_id" value="YOUR_USER_ID" />
+          <input type="hidden" name="service_id" value="Yservice_zlbpoxo" />
+          <input type="hidden" name="template_id" value="template_ulsujff" />
+          <input type="hidden" name="user_id" value="npyqxURUWqstfKGE_" />
 
           <div className="mb-4">
             <label htmlFor="name" className="block text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">Name</label>
