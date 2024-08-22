@@ -122,7 +122,7 @@ const HeroSection = () => {
             <img
               src={backgroundImage}
               alt="Background"
-              className="absolute inset-0 w-full h-full object-cover opacity-70 rounded-full z-0"
+              className="absolute inset-0 w-full h-full object-cover opacity-70 rounded-full z-0 "
             />
             <img
               src="/profile.png"

@@ -28,7 +28,7 @@ const ProjectsSection = () => {
         </h2>
         <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 p-5 relative z-10 ">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row pt-4 pb-4 ">
+            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row pt-4 pb-4 ">
               <img src={project.imgSrc} alt={project.title} className="w-full md:w-1/3 h-full object-cover px-4 py-4  " />
               <div className="p-4 flex-col">
                 <div>
