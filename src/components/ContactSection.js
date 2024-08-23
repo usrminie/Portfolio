@@ -68,7 +68,7 @@ function ContactSection() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">Message</label>
+            <label htmlFor="message" className="block text-lg font-medium text-gray-900 dark:text-gray-900 mb-2">Message</label>
             <textarea 
               id="message" 
               name="message" 
