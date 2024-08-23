@@ -44,7 +44,7 @@ const ResumePage = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gradient-animation rounded-lg shadow-lg mt-2 absolute inset-x-4 top-16 z-20">
+        <div className="md:hidden bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 rounded-lg shadow-lg mt-2 absolute inset-x-4 top-16 z-20">
           <ul className="flex flex-col items-center space-y-2 py-4">
             <li>
               <a href="/" className="block px-4 py-2 text-gray-900 dark:text-white hover:bg-blue-900 dark:hover:bg-blue-700 transition-all rounded-md font-bold">
