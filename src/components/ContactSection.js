@@ -52,7 +52,7 @@ function ContactSection() {
               value={formData.name} 
               onChange={handleChange} 
               required 
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" 
+              className="w-full px-4 py-2 text-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" 
             />
           </div>
           <div className="mb-4">
@@ -64,7 +64,7 @@ function ContactSection() {
               value={formData.email} 
               onChange={handleChange} 
               required 
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" 
+              className="w-full px-4 py-2 text-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" 
             />
           </div>
           <div className="mb-4">
@@ -76,7 +76,7 @@ function ContactSection() {
               value={formData.message} 
               onChange={handleChange} 
               required 
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" 
+              className="w-full px-4 py-2 text-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" 
             ></textarea>
           </div>
           <button 
