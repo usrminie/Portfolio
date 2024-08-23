@@ -11,8 +11,8 @@ const skillsData = {
   webDevelopment: [
     { src: '/logo/html.png', alt: 'HTML', name: 'HTML' },
     { src: '/logo/css.png', alt: 'CSS', name: 'CSS' },
-    { src: '/logo/Tailwind.png', alt: 'Tailwind', name: 'Tailwind' },
-    { src: '/logo/JS.png', alt: 'JavaScript', name: 'JavaScript' },
+    { src: '/logo/tailwind.png', alt: 'Tailwind', name: 'Tailwind' },
+    { src: '/logo/js.png', alt: 'JavaScript', name: 'JavaScript' },
     { src: '/logo/react.png', alt: 'React', name: 'React' },
     { src: '/logo/sql.png', alt: 'SQL', name: 'SQL' },
   ],
@@ -20,7 +20,7 @@ const skillsData = {
     { src: '/logo/mongodb.png', alt: 'MongoDB', name: 'MongoDB' },
     { src: '/logo/express-js.png', alt: 'Express.js', name: 'Express.js' },
     { src: '/logo/angular.png', alt: 'Angular', name: 'Angular' },
-    { src: '/logo/nodejs.png', alt: 'Node.js', name: 'Node.js' },
+    { src: '/logo/nodeJS.png', alt: 'Node.js', name: 'Node.js' },
   ],
   othertools: [
     { src: '/logo/git.png', alt: 'Git', name: 'Git' },
