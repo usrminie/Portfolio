@@ -81,14 +81,14 @@ const ResumePage = () => {
       <div className="relative flex-grow container mx-auto px-4 py-8 flex flex-col items-center mt-20">
         <div className="w-full h-full flex justify-center items-center overflow-hidden">
           <iframe
-            src="/Shalini_Singh_Resume.pdf"
+            src="/Resume-Shalini Singh.pdf"
             title="Resume"
             className="w-full h-full max-w-screen-md max-h-[80vh] aspect-ratio"
             style={{ aspectRatio: '8.5/11' }}/>
         </div>
         <div className="mt-4 flex justify-center">
           <a
-            href="/Shalini_Singh_Resume.pdf"
+            href="/Resume-Shalini Singh.pdf"
             download
             className="inline-block px-6 py-2 text-lg font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all">
             Download Resume

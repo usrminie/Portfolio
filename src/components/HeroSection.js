@@ -83,10 +83,10 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="flex flex-col-reverse md:flex-row items-center w-full max-w-6xl mx-auto mt-36 mb-12">
         <div className="relative text-center md:text-left md:flex-1">
-          <h1 className="text-5xl md:text-6xl font-bold mb-2 flex items-center justify-center md:justify-start bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 flex items-center justify-center md:justify-start bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
             Hello,<span className="wave ml-3 animate-wave">👋</span>
           </h1>
-          <h2 className="text-4xl md:text-5xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
             I'm Shalini Singh
           </h2>
           <p className="text-xl md:text-2xl mb-6">A Passionate Developer & Designer</p>

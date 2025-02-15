@@ -3,7 +3,6 @@ import React from 'react';
 // Define skills data
 const skillsData = {
   programmingLanguages: [
-    { src: '/logo/c.png', alt: 'C', name: 'C' },
     { src: '/logo/c++.png', alt: 'C++', name: 'C++' },
     { src: '/logo/java.png', alt: 'Java', name: 'Java' },
     { src: '/logo/python.png', alt: 'Python', name: 'Python' },
@@ -46,7 +45,7 @@ const SkillsSection = () => {
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100 text-center">
               Programming Languages
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3  gap-4">
               {skillsData.programmingLanguages.map((skill, index) => (
                 <div
                   key={index}
