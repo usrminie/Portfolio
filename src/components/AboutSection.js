@@ -19,7 +19,7 @@ const AboutSection = () => {
           </div>
           <div className="md:w-1/2 text-lg md:text-lg text-gray-9500 dark:text-gray-300 leading-relaxed text-center mt-12 font-medium">
             <p className="space-y-4">
-              I am Shalini Singh, an aspiring software engineer with an MCA from Kamla Nehru Institute of Technology (CGPA 8.98) and a BCA from Babu Banarasi Das University (CGPA 9.16). Skilled in C, C++, Java, Python, and MEAN stack, I excel in data structures, algorithms, AI, and software engineering.
+              I am Shalini Singh, an aspiring software engineer with an MCA from Kamla Nehru Institute of Technology (CGPA 8.98) and a BCA from Babu Banarasi Das University (CGPA 9.16). Skilled in C++, Java, Python, and MEAN stack, I excel in data structures, algorithms, AI, and software engineering.
               <br />
               <br />
               My hands-on  developing machine learning projects like Plant Leaf Disease Prediction and Tomato Leaf Prediction with high accuracy.
